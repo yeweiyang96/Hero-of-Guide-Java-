@@ -19,3 +19,4 @@ gen
 src/test
 ssm.iml
 target/
+src/main/resources/jdbc.properties
