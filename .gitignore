@@ -16,7 +16,6 @@ gen
 .idea/sqldialects.xml
 .idea/uiDesigner.xml
 .idea/workspace.xml
-pom.xml
 src/test
 ssm.iml
 target/
