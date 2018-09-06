@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.HeroMapper">
+    <insert id="insertHero" parameterType="Hero" useGeneratedKeys="true" keyProperty="id">
+        insert into heroes (name)
+        values (#{name})
+    </insert>
+
+    <delete id="deleteHero" parameterType="int">
+        delete
+        from heroes
+        where id = #{id}
+    </delete>
+
+    <select id="findHero" parameterType="int" resultType="Hero">
+        select *
+        from heroes
+        where id = #{id}
+    </select>
+
+    <update id="updateHero" parameterType="Hero" >
+        update heroes
+        set name = #{name}
+        where id = #{id}
+    </update>
+    <select id="findAllHeroes" resultType="Hero">
+        select *
+        from heroes
+    </select>
+    <select id="findHeroByName" parameterType="String" resultType="Hero">
+        select * from heroes where name = #{name}
+    </select>
+    <select id="searchHero" parameterType="String" resultType="Hero">
+        select * from heroes where name like #{term}
+    </select>
+</mapper>

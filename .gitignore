@@ -17,6 +17,6 @@ gen
 .idea/uiDesigner.xml
 .idea/workspace.xml
 pom.xml
-src/
+src/test
 ssm.iml
 target/
