@@ -7,16 +7,7 @@
 *.iml
 out
 gen
-.idea/compiler.xml
-.idea/dataSources.local.xml
-.idea/dataSources.xml
-.idea/dataSources/
-.idea/encodings.xml
-.idea/misc.xml
-.idea/sqldialects.xml
-.idea/uiDesigner.xml
-.idea/workspace.xml
+
 src/test
-ssm.iml
 target/
 src/main/resources/jdbc.properties
